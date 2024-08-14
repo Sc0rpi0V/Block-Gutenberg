@@ -1,0 +1,79 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .related-publications__header{
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}
+
+.related-publications__header-overtitle {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #006657;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.related-publications__header-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 46px;
+    letter-spacing: 0.1rem;
+    color: #0a0082;
+}
+
+.related-publications__header-content {
+    color: #0a0082;
+    font-size: 18px;
+    color: #0a0082;
+    font-family: 'Montserrat';
+    margin-bottom: 40px;
+}
+
+.related-publications__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.related-publications__item {
+    padding: 24px 20px;
+    border: 5px solid #0a0082;
+    width: calc(50% - 10px);
+    box-shadow: 10px 10px 0 0 #F5D750;
+}
+
+.related-publications__items-add {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.related-publications__footer{
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}

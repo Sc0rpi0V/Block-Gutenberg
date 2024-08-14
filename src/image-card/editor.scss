@@ -1,0 +1,70 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .image-card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 60px;
+ }
+
+ .image-card__img {
+    width: 50%;
+ }
+
+ .image-card__img-shape {
+   svg{
+      display: block;
+      width: 100%;
+      height: auto;
+   }
+ }
+
+ .image-card__content {
+    width: 50%;
+ }
+
+ .image-card__content-title {
+   margin-bottom: 30px;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 36px;
+   color: #0A0082;
+ }
+
+ .image-card__content-items {
+   margin-bottom: 30px;
+}
+
+.image-card__content-item{
+   margin-bottom: 30px;
+
+   &:last-child(){
+      margin-bottom: 0;
+   }
+}
+
+.image-card__content-item-title {
+   margin: 0;
+   margin-bottom: 10px;
+   color: #008874;
+   font-weight: 700;
+   font-size: 20px;
+   font-family: 'Montserrat';
+}
+
+.image-card__content-item-descr {
+   .components-text-control__input {
+      color: #0A0082;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Montserrat';
+   }
+}
+
+.image-card__content-add {
+   text-align: right;
+}

@@ -1,0 +1,77 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/video-iframe",
+	"version": "0.1.0",
+	"title": "Video Iframe",
+	"category": "Gutenberg-block",
+	"icon": "format-video",
+	"description": "Bloc permettant de charger une vidéo dans une iframe.",
+	"attributes": {
+		"overtitle" : {
+			"type": "string",
+			"default": ""
+		},
+		"overtitleLevel" : {
+			"type": "string",
+			"default": "4"
+		},
+		"title" : {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel" : {
+			"type": "string",
+			"default": "3"
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"iframe": {
+			"type": "string",
+			"default": ""
+		},
+		"legend": {
+			"type": "string",
+			"default": ""
+		},
+		"pictureId": {
+			"type": "number",
+			"default": null
+		},
+		"pictureSrc": {
+			"type": "string",
+			"default": ""
+		},
+		"pictureAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"transcriptionUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"transcriptionText": {
+			"type": "string",
+			"default": ""
+		},
+		"btnText": {
+			"type": "string",
+			"default": ""
+		},
+		"btnUrl": {
+			"type": "string",
+			"default": ""
+		}
+  	},
+	"supports": {
+		"html": false,
+		"alignWide": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

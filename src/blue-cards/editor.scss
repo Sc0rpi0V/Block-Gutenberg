@@ -1,0 +1,114 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .blue-cards__title {
+	text-align: center;
+	font-family: 'Montserrat';
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 36px;
+	color: #0A0082;
+ }
+
+ .blue-cards__items{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+ }
+
+ .blue-cards__item {
+	padding: 40px 20px;
+	width: 20%;
+
+	&:first-child{
+		background-color: #6C66B4;
+
+		.blue-cards__item-title {
+			color: #FFF;
+		}
+	}
+	&:nth-child(2){
+		background-color: #F1F4FF;
+
+		.blue-cards__item-title {
+			color: #080068;
+		}
+	}
+	&:nth-child(3){
+		background-color: #E3E4F7;
+
+		.blue-cards__item-title {
+			color: #080068;
+		}
+	}
+	&:nth-child(4){
+		background-color: #6C66B4;
+
+		.blue-cards__item-title {
+			color: #FFF;
+		}
+	}
+	&:nth-child(5){
+		background-color: #F1F4FF;
+
+		.blue-cards__item-title {
+			color: #080068;
+		}
+	}
+ }
+
+.blue-cards__item-title {
+	font-family: 'Montserrat';
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 26px;
+	margin-top: 0;
+	color: #FFFFFF;
+ }
+
+ .blue-cards__item-btn{
+	margin-bottom: 40px;
+	padding: 10px;
+	background-color: #0A0082;
+ }
+
+ .blue-cards__item-btn-url {
+	.block-editor-url-input__input {
+		max-width: 100%;
+	}
+ }
+
+.blue-cards__item-btn-text {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 13px;
+
+    .components-base-control__field {
+        margin-bottom: 0;
+    }
+
+    .components-text-control__input {
+        max-width: 200px;
+    }
+
+    span.dashicon {
+        color: #FFF;
+    }
+}
+
+.blue-cards__item-remove {
+	text-align: center;
+	.removeCardItem {
+		background-color: #FFF;
+	}
+}
+
+.blue-cards__items-add {
+	margin-top: 30px;
+	text-align: right;
+}

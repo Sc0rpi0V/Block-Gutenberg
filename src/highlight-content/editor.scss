@@ -1,0 +1,46 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .admin-highlight-content{
+    .admin-highlight-content__inner{ 
+        display: flex;
+        flex-flow: row nowrap;
+        justify-items: flex-start;
+        align-items: flex-start;
+        gap: 0 40px
+    }
+
+    &--img-right {
+        .admin-highlight-content__col-content {
+           order: 1;
+        }
+        .highlight-content__col-img {
+            order: 2;
+        }
+    }
+    &--img-left {
+        .admin-highlight-content__col-content {
+           order: 2;
+        }
+        .highlight-content__col-img {
+            order: 1;
+        }
+    }
+}
+
+.admin-highlight-content__col-content {
+    width: 60%;
+}
+
+.highlight-content__col-img {
+    width: 40%;
+}
+
+.highlight-content__bottom-img {
+    .components-button {
+        margin-top: 20px;
+    }
+}

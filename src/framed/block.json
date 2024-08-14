@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/framed",
+	"version": "0.1.0",
+	"title": "Encardé de couleur",
+	"category": "Gutenberg-block",
+	"icon": "embed-generic",
+	"description": "Titre, texte et bouton dans un encadré de couleur en fonction du type de page.",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"attributes" : {
+		"background" : {
+			"type": "string",
+			"default": "#FFF"
+		},
+		"bkgModifier": {
+			"type": "string",
+			"default": "white"
+		},
+		"align": {
+			"type": "string",
+			"default": "left"
+		},
+		"boxShadow": {
+			"type": "string",
+			"default": "#080068"
+		},
+		"boxShadowModifier": {
+			"type": "string",
+			"default": "blue"
+		}
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

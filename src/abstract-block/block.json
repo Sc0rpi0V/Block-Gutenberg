@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/abstract-block",
+	"version": "0.1.0",
+	"title": "Abstract Block",
+	"category": "Gutenberg-block",
+	"icon": "smiley",
+	"description": "Default block to load JS for override core blocks (not available in editor).",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/button-link",
+	"version": "0.1.0",
+	"title": "Bouton/lien",
+	"category": "Gutenberg-block",
+	"icon": "button",
+	"description": "Bloc pour paramétrer un bouton ou un lien.",
+	"attributes": {
+		"type": {
+			"type": "string",
+			"default": "btn"
+		},
+		"url": {
+			"type": "string",
+			"default": ""
+		},
+		"text": {
+			"type": "string",
+			"default": ""
+		}, 
+		"target" : {
+			"type": "boolean",
+			"default": false
+		},
+		"iconPos" : {
+			"type": "string",
+			"default": "none"
+		},
+		"btnStyle": {
+			"type": "string",
+			"default": "full"
+		},
+		"styleBkg": {
+			"type": "string",
+			"default": "light"
+		},
+		"align" : {
+			"type": "string",
+			"default": "left"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["left", "center", "right"],
+		"alignWide": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

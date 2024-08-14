@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .heading-homepage {
+	&--img-right{
+		.heading-homepage__inner{
+			grid-template-areas: "text image-col";
+		}
+	}
+
+	&--img-left {
+		.heading-homepage__inner{
+			grid-template-areas: "image-col text";
+		}
+	}
+}
+
+.heading-homepage__inner {
+	display: grid;
+	justify-items: center;
+	grid-template-areas:
+        "text image-col"
+        "image-bottom image-bottom";
+    grid-template-columns: repeat(2, minmax(0, 0.5fr));
+    gap: 0 25px;
+}
+
+.heading-homepage__col-content {
+	grid-area: text;
+	display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-self: stretch;
+}
+
+.heading-homepage__col-img {
+	grid-area: image-col;
+}

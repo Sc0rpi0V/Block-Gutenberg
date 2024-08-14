@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/highlight-content",
+	"version": "0.1.0",
+	"title": "Mise En Avant de contenu avec 2 images",
+	"category": "Gutenberg-block",
+	"description": "Contenu + 2 images (image à gauche et en bas)",
+	"attributes": {
+		"overtitle": {
+			"type": "string",
+			"default": "",
+			"selector": ".heading-cat"
+		},
+		"overtitleLevel": {
+			"type": "string",
+			"default": "2"
+		},
+		"title": {
+			"type": "string",
+			"default": "",
+			"selector": ".heading-title"
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": "3"
+		},
+		"description": {
+			"type": "string",
+			"default": "",
+			"selector": ".heading-desc"
+		},
+		"heading_image_side": {
+			"type": "object",
+			"default": "",
+			"selector": ".image"
+		},
+		"heading_image_after": {
+			"type": "object",
+			"default": "",
+			"selector": ".image"
+		},
+		"heading_affichage": {
+			"type": "string",
+			"default": "right"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

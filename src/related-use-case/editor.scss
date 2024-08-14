@@ -1,0 +1,50 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .related-use-case__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &--vertical {
+        gap: 38px;
+    }
+
+    &--horizontal {
+        gap: 38px 0;
+    }
+ }
+
+ .related-use-case__item {
+    padding: 10px;
+    border: 5px solid #0A0082;
+ }
+
+ .related-use-case__items--vertical {
+    .related-use-case__item {
+        width: calc(percentage(1/3) - 38px);
+
+        &:nth-child(even){
+            box-shadow: 10px 10px 0px #F5D750;
+        }
+
+        &:nth-child(odd){
+            box-shadow: 10px 10px 0px #0A0082;
+        }
+    }
+}
+
+.related-use-case__items--horizontal {
+    .related-use-case__item {
+        width: 100%;
+        box-shadow: 10px 10px 0px #D72871;
+    }
+}
+
+ .related-use-case__items-add {
+    margin-top: 30px;
+    text-align: right;
+ }

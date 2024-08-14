@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/cross-linking",
+	"version": "0.1.0",
+	"title": "Crosslinking",
+	"category": "Gutenberg-block",
+	"description": "Bloc pour afficher 2 liens de crosslinking sous forme de suivant/précédent.",
+	"attributes": {
+		"prevOvertitle": {
+			"type": "string",
+			"default": ""
+		},
+		"prevTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"prevLinkText": {
+			"type": "string",
+			"default": ""
+		},
+		"prevUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"nextOvertitle": {
+			"type": "string",
+			"default": ""
+		},
+		"nextTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"nextLinkText": {
+			"type": "string",
+			"default": ""
+		},
+		"nextUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

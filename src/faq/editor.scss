@@ -1,0 +1,102 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .faq__head {
+    text-align: center;
+ }
+
+.faq__head-title {
+    color: #0A0082;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.faq__head-content {
+    font-family: 'Montserrat';
+    color: #0A0082;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.faq__items {
+    margin-bottom: 30px;
+}
+
+.faq__item {
+    background-color: #FFF;
+    border: 5px solid #0A0082;
+    box-shadow: 10px 10px 0px #F5D750;
+    padding: 26px 40px;
+    margin-bottom: 40px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.faq__item-question-options {
+    margin-bottom: 20px;
+}
+
+.faq__item-question {
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    color: #0A0082;
+}
+
+.faq__item-question-level-label {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.faq__item-response {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #080068;
+    margin-bottom: 20px;
+}
+
+.faq__item-link {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 13px;
+
+    .components-base-control__field {
+        margin-bottom: 0;
+    }
+
+    .components-text-control__input {
+        min-width: 250px;
+    }
+
+    span.dashicon {
+        color: #00AA91;
+    }
+}
+
+.faq__item-url {
+    margin-top: 10px;
+}
+
+.faq__item-btn {
+    text-align: right;
+}
+
+.faq__items-add {
+    text-align: right;
+
+    .components-button{
+        user-select: none !important;
+    }
+}

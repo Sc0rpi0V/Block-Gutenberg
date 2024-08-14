@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/row-pages",
+	"version": "0.1.0",
+	"title": "Mise en avant de pages",
+	"category": "Gutenberg-block",
+	"icon": "welcome-add-page",
+	"description": "Bloc de mise en avant de page.",
+	"attributes": {
+		"pageItems": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "row-pages",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

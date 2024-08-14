@@ -1,0 +1,67 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/related-publications",
+	"version": "0.1.0",
+	"title": "Mise en avant de publication",
+	"category": "Gutenberg-block",
+	"description": "Mise en avant de publication, tout type de poste confondu. Avec une variation de style pour les élements affichés.",
+	"attributes": {
+		"headAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"overtitle": {
+			"type": "string",
+			"default": ""
+		},
+		"overtitleLevel": {
+			"type": "string",
+			"default": "2"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": "3"
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"publicationItems": {
+			"type": "array",
+			"default": []
+		},
+		"btnUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"btnText": {
+			"type": "string",
+			"default": ""
+		}, 
+		"btnTarget" : {
+			"type": "boolean",
+			"default": false
+		},
+		"iconPos" : {
+			"type": "string",
+			"default": "none"
+		},
+		"footAlign": {
+			"type": "string",
+			"default": "center"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,76 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.texts-cloud__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 46px;
+    text-align: center;
+    color: #0A0082;
+    margin-bottom: 50px;
+}
+
+.texts-cloud__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.texts-cloud__item {
+    position: relative;
+    text-align: center;
+    border-radius: 60px;
+    padding: 18px 28px;
+    background-color: #FFF;
+    overflow: hidden;
+
+    &:nth-child(1),
+    &:nth-child(4n + 1){
+        border: 5px solid #F5D750;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4n + 2){
+        border: 5px solid #D72871;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4n + 3){
+        border: 5px solid #00AA91;
+    }
+
+    &:nth-child(4),
+    &:nth-child(4n + 4){
+        border: 5px solid #0A0082;
+    }
+}
+.texts-cloud__item-text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    color: #080068;
+}
+
+.removeCloudItem {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 1;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    min-width: auto !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.texts-cloud__items-add {
+    margin-top: 20px;
+    text-align: center;
+}

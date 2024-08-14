@@ -1,0 +1,154 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .highlight-pdf {
+    background-color: #008874;
+    padding: 20px;
+ }
+ .highlight-pdf__inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 0 50px;
+ }
+
+ .highlight-pdf__image {
+    width: calc(30% - 25px);
+    figure {
+        img {
+            max-width: 295px;
+        }
+    }
+    .components-button {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        background-color: #FFF;
+    }
+ }
+
+ .highlight-pdf__image {
+    text-align: right;
+ }
+
+ .highlight-pdf__content {
+    width: calc(70% - 25px);
+    margin-bottom: 55px;
+ }
+
+ .highlight-pdf__content-flags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 20px;
+    margin-bottom: 20px;
+ }
+
+ .highlight-pdf__content-flag {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    &--cat {
+        padding: 10px;
+        background-color: #FFF;
+        color: #006657;
+        border-radius: 12px;
+    }
+
+    &--tag {
+        color: #FFF;
+    }
+ }
+
+ .highlight-pdf__content-overtitle {
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFF;
+ }
+
+ .highlight-pdf__content-title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFF;
+ }
+
+ .highlight-pdf__content-pdf {
+    .components-placeholder {
+        margin-bottom: 20px;
+    }
+ }
+
+ .highlight-pdf__content-pdf-render {
+    margin-bottom: 20px;
+}
+
+ .highlight-pdf__content-pdf-link {
+    margin-bottom: 20px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0A0082;
+    padding: 11px 20px;
+
+    a{
+        display: block;
+        font-family: 'Montserrat';
+        color: #FFF;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none !important;
+
+        &:hover {
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+
+    .components-button {
+        span {
+            color: #FFF;
+        }
+    }
+ }
+
+ .highlight-pdf__content-pdf-btn-text {
+    font-family: 'Montserrat';
+    color: #FFF;
+    font-weight: 700;
+    font-size: 16px;
+ }
+
+ .highlight-pdf__content-link {
+    padding: 0 !important;
+    .admin-btn-link__icon {
+        color: #FFF;
+    }
+
+    .admin-btn-link__content {
+        margin-bottom: 10px;
+    }
+ }
+
+ .highlight-pdf__content-link-text {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+ }

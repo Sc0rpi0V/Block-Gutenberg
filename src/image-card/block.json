@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/image-card",
+	"version": "0.1.0",
+	"title": "Image avec contenu dans une carte",
+	"category": "Gutenberg-block",
+	"icon": "embed-photo",
+	"description": "",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"pictureId": {
+			"type": "number",
+			"default": null
+		},
+		"pictureSrc": {
+			"type": "string",
+			"default": ""
+		},
+		"pictureAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"cardTitle" : {
+			"type": "string",
+			"default": ""
+		},
+		"cardTitleTag" : {
+			"type": "string",
+			"default": "2"
+		},
+		"cardItems": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"title": {
+						"type": "string",
+						"selector": "h5",
+						"default": ""
+					},
+					"content": {
+						"type": "string",
+						"selector": "div",
+						"default": ""
+					}
+				}
+			}
+		}
+	},
+	"textdomain": "image-card",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

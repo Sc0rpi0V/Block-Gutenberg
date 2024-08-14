@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/blue-cards",
+	"version": "0.1.0",
+	"title": "Liste de carte bleue",
+	"category": "Gutenberg-block",
+	"description": "Liste de carte avec titre et bouton, sur fond bleu.",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": "2"
+		},
+		"cards": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"title": {
+						"type": "string",
+						"default": ""
+					},
+					"btnText": {
+						"type": "string",
+						"default": ""
+					},
+					"btnUrl": {
+						"type": "string",
+						"default": ""
+					}
+				}
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

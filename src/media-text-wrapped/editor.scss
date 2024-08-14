@@ -1,0 +1,60 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.media-text-wrapped {
+	.media-text-wrapped__img {
+		margin-bottom: 24px;
+		position: relative;
+		z-index: 10;
+		width: 50%;
+	}
+	&--img-left {
+		.media-text-wrapped__img {
+			float: left;
+			margin-right: 24px;
+		}
+	}
+
+	&--img-right {
+		.media-text-wrapped__img {
+			float: right;
+			margin-left: 24px;
+
+		}
+	}
+
+	.wp-block-Gutenberg-button-link{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.media-text-wrapped__inner {
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+	} 
+}
+
+.media-text-wrapped__title {
+	font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 22px;
+    color: #0a0082;
+}
+
+.media-text-wrapped__subtitle {
+	font-family: 'Montserrat';
+    color: #008874;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.media-text-wrapped__description {
+	font-family: 'Montserrat';
+    font-size: 18px;
+    color: #0a0082;
+}

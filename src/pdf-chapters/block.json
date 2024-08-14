@@ -1,0 +1,117 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/pdf-chapters",
+	"version": "0.1.0",
+	"title": "Liste de chapitres PDF",
+	"category": "Gutenberg-block",
+	"icon": "pdf",
+	"description": "Liste de chapitre de fichier PDF à télécharger.",
+	"attributes": {
+		"overtitle": {
+			"type": "string",
+			"default": ""
+		},
+		"overtitleLevel": {
+			"type": "string",
+			"default": "2"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": "3"
+		},
+		"chapters": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"tag": {
+						"type": "string",
+						"default": ""
+					},
+					"chapterTitle": {
+						"type": "string",
+						"default": ""
+					},
+					"title": {
+						"type": "string",
+						"default": ""
+					},
+					"pdfId": {
+						"type": "number",
+						"default": 0
+					},
+					"pdfUrl": {
+						"type": "string",
+						"default": ""
+					}, 
+					"pdfName": {
+						"type": "string",
+						"default": ""
+					},
+					"pdfSize": {
+						"type": "string",
+						"default": ""
+					},
+					"btnText" : {
+						"type": "string",
+						"default": ""
+					}
+				}
+			}
+		},
+		"mainPdfUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"mainPdfId": {
+			"type": "number",
+			"default": ""
+		},
+		"mainPdfName": {
+			"type": "string",
+			"default": ""
+		},
+		"mainPdfSize": {
+			"type": "string",
+			"default": ""
+		},
+		"mainPdfText": {
+			"type": "string",
+			"default": ""
+		},
+		"secondPdfUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"secondPdfId": {
+			"type": "number",
+			"default": ""
+		},
+		"secondPdfName": {
+			"type": "string",
+			"default": ""
+		},
+		"secondPdfSize": {
+			"type": "string",
+			"default": ""
+		},
+		"secondPdfText": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

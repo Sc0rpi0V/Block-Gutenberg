@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/quote",
+	"version": "0.1.0",
+	"title": "Citation",
+	"category": "Gutenberg-block",
+	"description": "Bloc de citation avec image, texte, auteur et information de l'auteur",
+	"attributes": {
+		"pictureId": {
+			"type": "number",
+			"default": null
+		},
+		"pictureSrc": {
+			"type": "string",
+			"default": ""
+		},
+		"pictureAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"textAlign": {
+			"type": "string",
+			"default": "left"
+		},
+		"quote": {
+			"type": "string",
+			"default": ""
+		},
+		"author": {
+			"type": "string",
+			"default": ""
+		},
+		"job": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

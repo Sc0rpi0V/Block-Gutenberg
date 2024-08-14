@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/key-figures",
+	"version": "0.1.0",
+	"title": "Liste de chiffre clé",
+	"category": "Gutenberg-block",
+	"description": "Liste de chiffre clé, limité a six entrées.",
+	"attributes": {
+		"headAlign" : {
+			"type": "string",
+			"default": "center"
+		},
+		"overtitle": {
+			"type": "string",
+			"default": ""
+		},
+		"overtitleLevel": {
+			"type": "string",
+			"default": "2"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": "3"
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"keyItems": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"number": {
+						"type": "string",
+						"selector": "span",
+						"default": ""
+					},
+					"content": {
+						"type": "string",
+						"selector": "div",
+						"default": ""
+					}
+				}
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

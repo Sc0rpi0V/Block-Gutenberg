@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/cta-list",
+	"version": "0.1.0",
+	"title": "Liste de CTA",
+	"category": "Gutenberg-block",
+	"description": "Liste de CTA, limté à 4 tuiles CTA",
+	"attributes": {
+		"overtitle": {
+			"type": "string",
+			"default": "",
+			"selector": ".heading-cat"
+		},
+		"overtitleLevel": {
+			"type": "string",
+			"default": "2"
+		},
+		"title": {
+			"type": "string",
+			"default": "",
+			"selector": ".heading-title"
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": "3",
+			"selector": ".heading-title"
+		},
+		"description": {
+			"type": "string",
+			"default": "",
+			"selector": ".heading-desc"
+		},
+		"liste_cta": {
+		  "type": "array",
+		  "default": [],
+		  "items": {
+				"type": "object",
+				"properties": {
+					"title": {
+						"type": "string",
+						"selector": "div",
+						"default": ""
+					},
+					"link_url": {
+						"type": "string",
+						"selector": "div",
+						"default": ""
+					},
+					"link_title": {
+						"type": "string",
+						"selector": "div",
+						"default": ""
+					},
+					"link_title_mobile": {
+						"type": "string",
+						"selector": "div",
+						"default": ""
+					}
+				}
+		  }
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

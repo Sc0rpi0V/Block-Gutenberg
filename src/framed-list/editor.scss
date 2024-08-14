@@ -1,0 +1,45 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .framed-list {
+	padding: 15px 20px 25px 10px;
+ }
+
+ .framed-list__inner {
+	padding: 40px;
+	background: #FFFFFF;
+	border: 5px solid #0A0082;
+	box-shadow: 10px 10px 0px #D72871;
+	border-radius: 40px;
+ }
+
+ .framed-list__title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	color: #0A0082;
+	margin-bottom: 10px;
+ }
+
+ .framed-list__content {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #0A0082;
+	margin-bottom: 30px;
+ }
+
+ .framed-list {
+	.list {
+		.rich-text {
+			font-family: 'Montserrat';
+			font-weight: 700;
+			font-size: 20px;
+			color: #0A0082;
+		}
+	}
+ }

@@ -1,0 +1,85 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .key-figures__heading {
+	margin-bottom: 40px;
+
+	&--left {
+		text-align: left;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+	}
+ }
+
+.block-heading__overtitle {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 16px;
+	color: #006657;
+	margin-bottom: 18px;
+}
+
+.block-heading__title {
+	font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+    color: #0a0082;
+	font-size: 56px;
+	margin-bottom: 20px;
+	margin-top: 0;
+} 
+
+.block-heading__description {
+	margin-bottom: 40px;
+	font-family: 'Montserrat';
+	font-size: 20px;
+	color: #0A0082; 
+}
+
+.key-figures__items {
+	display: grid;
+	grid-template-columns: repeat(3, 33.33%);
+	gap: 0;
+	align-content: center;
+	justify-content: center;
+}
+
+.key-figures__item{
+	&:nth-child(1),
+	&:nth-child(6) {
+		background-color: #00AA91;
+		border-radius: 58px 0;
+		color: #0a0082;
+	}
+
+	&:nth-child(2),
+	&:nth-child(4) {
+		background-color: #0a0082;
+		border-radius: 0 0 0 58px;
+		color: #FFF;
+	}
+
+	&:nth-child(3),
+	&:nth-child(5) {
+		background-color: #F5D750;
+		border-radius: 0 58px;
+		color: #0a0082;
+	}
+}
+
+.removeKeyNumber {
+	background-color :#FFF !important;
+	margin-top: 10px;
+}
+
+.key-figures__items-add {
+	margin-top: 20px;
+}

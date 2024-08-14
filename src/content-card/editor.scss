@@ -1,0 +1,82 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .content-card__header{
+	margin-bottom: 40px;
+	text-align: center;
+ }
+
+ .content-card__header-overtitle {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 16px;
+	color: #006657;
+	margin-bottom: 18px;
+}
+
+.content-card__header-title {
+	font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+    color: #0a0082;
+	font-size: 56px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.content-card {
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding: 20px 40px;
+	background: #FFFFFF;
+	border: 5px solid #0A0082;
+	box-shadow: 10px 10px 0px #D72871;
+}
+
+
+.content-card__image {
+	width: 40%
+}
+
+.content-card__texts {
+	width: 60%;
+	padding: 0 40px;
+}
+
+.content-card__text-tag {
+	background: #006657;
+	border-radius: 12px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+	padding: 10px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.content-card__text-title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	color: #0A0082;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.content-card__text-descr {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #0A0082;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,68 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.block-heading__desc {
+	margin-bottom: 20px;
+}
+
+.liste-cta__inner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 0 30px;
+	margin-bottom: 30px;
+}
+
+.liste-cta__item {
+	width: calc(25% - 30px);
+	height: auto;
+    padding: 30px;
+	aspect-ratio: 0.81;
+    position: relative;
+    color: #0a0082;
+    border: 4px solid #0a0082;
+
+	&:first-child {
+		background-color: #0a0082;
+		-webkit-box-shadow: 10px 10px 0 0 #F5D750;
+		box-shadow: 10px 10px 0 0 #F5D750;
+		color: #fff;
+	}
+
+	&:nth-child(2) {
+		background-color: #33BBA7;
+		-webkit-box-shadow: 10px 10px 0 0 #CCEEE9;
+		box-shadow: 10px 10px 0 0 #CCEEE9;
+	}
+
+	&:nth-child(3) {
+		-webkit-box-shadow: 10px 10px 0 0 #D72871;
+		box-shadow: 10px 10px 0 0 #D72871;
+	}
+
+	&:last-child {
+		background-color: #CCEEE9;
+		-webkit-box-shadow: 10px 10px 0 0 #33BBA7;
+		box-shadow: 10px 10px 0 0 #33BBA7;
+	}
+
+	.liste-cta__title{
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 26px;
+	}
+
+	.components-button {
+		background-color: #FFF;
+	}
+}
+
+.liste-cta__btn-add {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	text-align: right;
+}

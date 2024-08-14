@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/media-text",
+	"version": "0.1.0",
+	"title": "Image avec texte et bouton",
+	"category": "Gutenberg-block",
+	"description": "Bloc image avec texte et bouton avec possibilitée de changer la position de l'image.",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"imgPos" : {
+			"type": "string",
+			"default": "left"
+		}
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

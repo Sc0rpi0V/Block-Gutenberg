@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/cols-content",
+	"version": "0.1.0",
+	"title": "Contenu texte sur 2 colonnes",
+	"category": "Gutenberg-block",
+	"description": "Bloc de contenu texte, titre liste sur 2 colonnes.",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

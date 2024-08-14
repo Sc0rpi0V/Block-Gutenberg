@@ -1,0 +1,79 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .quote {
+    padding: 40px 60px;
+    border-radius: 40px;
+    background-color: #3B339B;
+    box-shadow: 10px 10px 0px #00AA91;
+ }
+
+ .quote__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0 30px;
+ }
+
+ .quote__img {
+    width: 200px;
+ }
+
+ .quote__content {
+    width: calc(100% - 230px);
+ }
+
+ .quote--align-left {
+   .quote__content {
+      text-align: left;
+   }
+ }
+
+ .quote--align-center {
+   .quote__content {
+      text-align: center;
+   }
+ }
+
+ .quote__inner-img-selected {
+    .quote__img {
+        width: 100px;
+    }
+
+    .quote__content {
+        width: calc(100% - 130px);
+     }
+ }
+
+ .quote__img-selected {
+    .components-button {
+        background-color: #FFF !important;
+    }
+ }
+
+ .quote__content-text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFF;
+    margin-bottom: 20px;
+ }
+
+ .quote__content-author {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FFF;
+ }
+
+ .quote__content-author-infos {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFF;
+ }

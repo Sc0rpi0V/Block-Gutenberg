@@ -1,0 +1,63 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .cta-img-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 60px;
+    padding: 20px;
+
+    &--green {
+        background-color: #33BBA7;
+        box-shadow: 10px 10px 0px #F5D750;
+    }
+
+    &--yellow {
+        background-color: #F5D750;
+        box-shadow: 10px 10px 0px #33BBA7;
+    }
+ }
+
+ .cta-img-content__img {
+    width: 333px;
+ }
+ .cta-img-content__img {
+     .components-tip {
+        margin-top: 10px;
+        p {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            color: #000;
+        }
+     }
+ }
+
+ .cta-img-content__img-render {
+   .components-button {
+       background-color: #FFF !important;
+   }
+}
+
+ .cta-img-content__content {
+    width: calc(100% - 393px);
+ }
+
+ .cta-img-content__content-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    color: #0A0082;
+    margin-bottom: 20px;
+ }
+
+ .cta-img-content__content-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: #0A0082;
+    margin-bottom: 20px;
+ }

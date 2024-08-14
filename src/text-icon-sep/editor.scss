@@ -1,0 +1,133 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .wp-block-Gutenberg-text-icon-sep{
+    background-color: #6C66B4;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        mask-image: url(./svg/shape-03.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background-color: #3B339B;
+        transform: rotate(270deg) scale(2);
+        position: absolute;
+        z-index: -1;
+        width: 300%;
+        height: 190%;
+        bottom: 0;
+        top: -130%;
+    }
+}
+
+.text-icon-sep {
+
+    background-color: #6C66B4;
+
+    .text-icon-sep__inner {
+        &::after{
+            background-color: #F5D750;
+        }
+    }
+
+    &--solutions-expertises {
+        background-color: #99DDD3;
+
+        .text-icon-sep__inner {
+            &::after {
+                background-color:#D72871;
+            }
+        }
+    }
+
+    &--radd {
+        background-color: #0a0082;
+
+        .text-icon-sep__inner {
+            &::after {
+                background-color:#F5D750;
+            }
+        }
+    }
+
+    &--fondation {
+        background-color: #EAB44A;
+
+        .text-icon-sep__inner {
+            &::after {
+                background-color:#0a0082;
+            }
+        }
+    }
+
+    &--job {
+        background-color: #99DDD3;
+
+        .text-icon-sep__inner {
+            &::after {
+                background-color:#D72871;
+            }
+        }
+    }
+
+    &--subsidiary {
+        background-color: #F5D750;
+
+        .text-icon-sep__inner {
+            &::after {
+                background-color:#0a0082;
+            }
+        }
+    }
+}
+
+.text-icon-sep__inner {
+    display: flex;
+    justify-items: flex-start;
+    column-gap: 4rem;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &::after {
+        content: "";
+        width: 106px;
+        height: 74px;
+        flex: 1 0 106px;
+        display: block;
+        mask-image: url(./svg/icon-petal.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background-color: #F5D750;
+        margin-bottom: 1rem;
+    }
+}
+
+.text-icon-sep__content {
+    width: calc(100% - 146px);
+}
+
+.text-icon-sep__text-content {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-icon-sep__btn {
+    margin-top: 2rem;
+}
+
+.text-icon-sep__separator {
+    background-color: #FFF;
+
+    &.separators--4{
+       background-color: #00AA91; 
+    }
+}

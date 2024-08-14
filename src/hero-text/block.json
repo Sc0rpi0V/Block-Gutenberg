@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/hero-text",
+	"version": "0.1.0",
+	"title": "Titre haut de page",
+	"category": "Gutenberg-block",
+	"icon": "edit-large",
+	"description": "Bloc de titre h1 en haut de page.",
+	"attributes": {
+		"showBreadcrumb": {
+			"type": "boolean",
+			"default": true
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/texts-cloud",
+	"version": "0.1.0",
+	"title": "Nuage de texte",
+	"category": "Gutenberg-block",
+	"icon": "tagcloud",
+	"description": "Nuage de texte personnalisé, avec 3 éléments par ligne.",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": 2
+		},
+		"cloudItems": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"text": {
+						"type": "string",
+						"default": ""
+					}
+				}
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

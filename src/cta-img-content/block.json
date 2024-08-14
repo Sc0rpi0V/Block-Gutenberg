@@ -1,0 +1,63 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/cta-img-content",
+	"version": "0.1.0",
+	"title": "Bloc CTA sur fond de couleur avec image",
+	"category": "Gutenberg-block",
+	"description": "Image, avec texte et bouton sur fond de couleur avec une ombre portée.",
+	"attributes": {
+		"bkgColor": {
+			"type": "string",
+			"default": "#33BBA7"
+		},
+		"bkgModifier": {
+			"type": "string",
+			"default": "green"
+		},
+		"pictureId": {
+			"type": "number",
+			"default": null
+		},
+		"pictureSrc": {
+			"type": "string",
+			"default": ""
+		},
+		"pictureAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"url": {
+			"type": "string",
+			"default": ""
+		},
+		"text": {
+			"type": "string",
+			"default": ""
+		}, 
+		"target" : {
+			"type": "boolean",
+			"default": false
+		},
+		"iconPos" : {
+			"type": "string",
+			"default": "none"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "cta-img-content",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

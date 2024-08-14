@@ -1,0 +1,51 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.media-text__inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.media-text__col-image,
+.media-text__col-content {
+    width: 50%;
+}
+
+.media-text {
+    &--img-left {
+        .media-text__inner {
+            flex-flow: row nowrap;
+        }
+    }
+
+    &--img-right {
+        .media-text__inner {
+            flex-flow: row-reverse nowrap;
+        }
+    }
+}
+
+.media-text__title{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 22px;
+    color: #0a0082;
+}
+
+.media-text__subtitle {
+    font-family: 'Montserrat';
+    color: #008874;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.media-text__text-content {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #0a0082;
+}

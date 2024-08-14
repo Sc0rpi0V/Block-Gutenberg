@@ -1,0 +1,76 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/content-card",
+	"version": "0.1.0",
+	"title": "Bloc avec image et texte dans une carte",
+	"category": "Gutenberg-block",
+	"icon": "embed-photo",
+	"description": "Bloc avec image et texte dans une carte avec ombre portée rose.",
+	"attributes": {
+		"title" : {
+			"type": "string",
+			"default": ""
+		},
+		"tag" : {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel" : {
+			"type": "string",
+			"default": "3"
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+    	},
+		"imageId": {
+			"type": "number",
+			"default": 0
+    	},
+		"imageAlt": {
+			"type": "string",
+			"default": ""
+    	},
+		"cardTitle" : {
+			"type": "string",
+			"default": ""
+		},
+		"cardTag" : {
+			"type": "string",
+			"default": ""
+		},
+		"cardDesc" : {
+			"type": "string",
+			"default": ""
+		},
+		"type": {
+			"type": "string",
+			"default": "btn"
+			},
+		"url": {
+			"type": "string",
+			"default": ""
+		},
+		"text": {
+			"type": "string",
+			"default": ""
+		},
+		"target": {
+		"type": "boolean",
+		"default": false
+		},
+		"iconPos": {
+			"type": "string",
+			"default": "none"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

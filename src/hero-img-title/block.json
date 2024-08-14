@@ -1,0 +1,100 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/hero-img-title",
+	"version": "0.1.0",
+	"title": "Bloc haut de page (image avec titre et bouton)",
+	"category": "Gutenberg-block",
+	"icon": "embed-photo",
+	"description": "Image, informations de publication, titre et un bouton.",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"showBreadcrumb": {
+			"type": "boolean",
+			"default": true
+		},
+		"pictureId": {
+			"type": "number",
+			"default": null
+		},
+		"pictureSrc": {
+			"type": "string",
+			"default": ""
+		},
+		"pictureAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"showDateAndAuthor": {
+			"type": "boolean",
+			"default": false
+		},
+		"dateLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"postDate" : {
+			"type": "string",
+			"default": ""
+		},
+		"author": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		}, 
+		"showRef" : {
+			"type": "boolean",
+			"default": false
+		},
+		"refContent" : {
+			"type": "string",
+			"default": ""
+		},
+		"showText" : {
+			"type": "boolean",
+			"default": false
+		},
+		"textContent": {
+			"type": "string",
+			"default": ""
+		},
+		"showBtns" : {
+			"type": "boolean",
+			"default": false
+		}, 
+		"btnUrl1" : {
+			"type": "string",
+			"default": ""
+		},
+		"btnText1": {
+			"type": "string",
+			"default": ""
+		},
+		"btnTarget1" : {
+			"type": "boolean",
+			"default": false
+		},
+		"btnUrl2" : {
+			"type": "string",
+			"default": ""
+		},
+		"btnText2": {
+			"type": "string",
+			"default": ""
+		},
+		"btnTarget2" : {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,112 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.list {
+    &--chevron {
+        ul {
+            list-style-type: none;
+
+            li {
+                margin: 10px 35px;
+                line-height: 1.6;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    mask-image: url(./svg/icon-check.svg);
+                    mask-size: cover;
+                    color: #008874;
+                    width: 22px;
+                    height: 22px;
+                    background-color: #00AA91;
+                    display: block;
+                    position: absolute;
+                    left: -32px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    &--arrow {
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+                margin: 10px 35px;
+                line-height: 1.6;
+
+                &::before {
+                    content: "";
+                    mask-image: url(./svg/icon-arrow-right.svg);
+                    mask-size: cover;
+                    color: #008874;
+                    width: 22px;
+                    height: 22px;
+                    background-color: #00AA91;
+                    display: block;
+                    position: absolute;
+                    left: -32px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    &--bullet {
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+                margin: 10px 35px;
+                line-height: 1.6;
+
+                &::before {
+                    content: "";
+                    mask-image: url(./svg/icon-bullet-green.svg);
+                    mask-size: cover;
+                    color: #008874;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #00AA91;
+                    display: block;
+                    position: absolute;
+                    left: -25px;
+                    top: 6px;
+                }
+            }
+        }
+    }
+
+    &--dash {
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+                margin: 10px 35px;
+                line-height: 1.6;
+
+                &::before {
+                    content: "";
+                    mask-image: url(./svg/icon-dash-green.svg);
+                    mask-size: cover;
+                    color: #008874;
+                    width: 22px;
+                    height: 5px;
+                    background-color: #00AA91;
+                    display: block;
+                    position: absolute;
+                    left: -33px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}

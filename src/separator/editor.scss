@@ -1,0 +1,48 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .separators {
+
+    &--1 {
+        background-image: url(./svg/icon-selector-01.svg);
+        background-size: 32px 16.5px;
+        height: 166px;
+        width: 100%;
+    }
+
+    &--2 {
+        background-image: url(./svg/icon-selector-02.svg);
+        background-size: 18px 90px;
+        height: 80px;
+        width: 100%;
+
+    }
+
+    &--3 {
+        background-image: url(./svg/icon-selector-03.svg);
+        background-size: 18px 35px;
+        height: 140px;
+        width: 100%;
+
+    }
+
+    &--4 {
+        mask-image: url(./svg/icon-selector-04.svg);
+        mask-size: 16px;
+        background-color: #00AA91;
+        height: 80px;
+        width: 100%;
+    }
+
+}
+
+.image-card__content {
+    border: 5px solid #0A0082;
+    border-radius: 90px;
+}
+
+.image-card__content-inner {
+    padding: 60px;
+}

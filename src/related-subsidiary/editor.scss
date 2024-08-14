@@ -1,0 +1,116 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .subsidiary {
+	/* Frame 491 */
+
+	/* Auto layout */
+	padding: 100px 142px 50px;
+	gap: 30px;
+
+	/* primary-01/400 */
+	background: #3B339B;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 7;
+	flex-grow: 0;
+ }
+
+.related-subsidiarys__header{
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}
+
+.related-subsidiarys__header-overtitle {
+	/* Nos FILIALES */
+
+	height: 20px;
+
+	/* >960px/Headline */
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+
+	/* identical to box height */
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	/* white */
+	color: #FFFFFF;
+
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	z-index: 1;
+}
+
+.related-subsidiarys__header-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 56px;
+    letter-spacing: 0.1rem;
+    color: #FFFFFF;
+		text-align: center;
+}
+
+.related-subsidiarys__header-content {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-bottom: 40px;
+		text-align: center;
+}
+
+.related-subsidiarys__items {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.related-subsidiarys__item {
+	padding: 24px 20px;
+	border: 5px solid #0a0082;
+	width: calc(50% - 10px);
+	box-shadow: 10px 10px 0 0 #233e87;
+}
+
+.related-subsidiarys__items-add {
+	margin-top: 30px;
+	text-align: right;
+}
+
+.related-subsidiarys__footer{
+	&--left {
+			text-align: left;
+	}
+
+	&--center {
+			text-align: center;
+	}
+
+	&--right {
+			text-align: right;
+	}
+}

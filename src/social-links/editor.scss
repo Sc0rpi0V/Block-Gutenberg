@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .socials__title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #006657;
+    margin-bottom: 24px;
+ }
+
+ .social__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 20px;
+ }
+
+ .social__item {
+    width: calc(33.33% - 26px);
+    background-color: #F1F4FF;
+    padding: 15px;
+ }
+
+ .social__item-text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #080068;
+    margin-bottom: 10px;
+ }
+
+ .social__item-url {
+    .block-editor-url-input__input {
+        width: 100%;
+        max-width: 100%;
+    }
+ }
+
+ .social__item {
+    .components-tip {
+        color: #000 !important;
+    }
+ }
+
+ .social__item-btn {
+    margin-top: 10px;
+ }
+
+ .social__items-add {
+    text-align: right;
+ }

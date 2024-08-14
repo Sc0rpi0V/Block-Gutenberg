@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/text-icon-sep",
+	"version": "0.1.0",
+	"title": "Texte avec bouton et séparateur",
+	"category": "Gutenberg-block",
+	"icon": "text",
+	"description": "Bloc sur couleur de fond avec un texte, un bouton (optionel) et un separateur.",
+	"attributes": {
+		"style": {
+			"type": "string",
+			"default": "1"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

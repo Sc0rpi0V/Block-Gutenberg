@@ -1,0 +1,71 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .related-jobs__header{
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}
+
+.related-jobs__header-overtitle {
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #006657;
+}
+
+.related-jobs__header-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A0082;
+    margin-bottom: 10px;
+}
+
+.related-jobs__header-content {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: #0A0082;
+    margin-bottom: 40px;
+}
+
+.related-jobs__item {
+    display: block;
+    padding: 26px 40px;
+    margin-bottom: 20px;
+    border: 5px solid #0A0082;
+    box-shadow: 10px 10px 0px #F5D750;
+}
+
+.related-job__items-add {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.related-jobs__footer{
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}

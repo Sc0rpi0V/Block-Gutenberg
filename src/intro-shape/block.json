@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/intro-shape",
+	"version": "0.1.0",
+	"title": "Bloc d'introduction",
+	"category": "Gutenberg-block",
+	"icon": "format-aside",
+	"description": "Bloc d'introduction avec une forme géométrique.",
+	"attributes": {
+		"firstContent" : {
+			"type": "string",
+			"default": ""
+		},
+		"secondContent" : {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

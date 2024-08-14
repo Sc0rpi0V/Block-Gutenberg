@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 33 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Plan-de-travail1" serif:id="Plan de travail1" transform="matrix(1,0,0,0.843719,-0.213758,0.0499155)">
+        <rect x="0.214" y="-0.059" width="32.996" height="14.437" style="fill:none;"/>
+        <g transform="matrix(1,0,0,1.18523,0.213758,-1.18668)">
+            <g>
+                <path d="M33,9.69L16.5,0.981L0,9.69L0,13.082L16.5,4.374L33,13.082L33,9.69Z" style="fill:rgb(10,0,130);"/>
+            </g>
+        </g>
+    </g>
+</svg>

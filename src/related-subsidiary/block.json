@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/related-subsidiary",
+	"version": "0.1.0",
+	"title": "Mise en avant de filiale",
+	"category": "Gutenberg-block",
+	"icon": "category",
+	"description": "Bloc de mise en avant de filiale.",
+	"attributes": {
+		"headAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"overtitle": {
+			"type": "string",
+			"default": ""
+		},
+		"overtitleLevel": {
+			"type": "string",
+			"default": "2"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"titleLevel": {
+			"type": "string",
+			"default": "3"
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"subsidiaryItems": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"supports": {
+		"html": false,		
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

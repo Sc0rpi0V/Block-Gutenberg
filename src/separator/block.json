@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/separator",
+	"version": "0.1.0",
+	"title": "Separateur",
+	"category": "Gutenberg-block",
+	"description": "Séparateur de bloc avec 4 variations.",
+	"attributes": {
+		"style": {
+			"type": "string",
+			"default": "1",
+			"selector": ".separators"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

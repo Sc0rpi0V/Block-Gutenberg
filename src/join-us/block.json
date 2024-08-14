@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/join-us",
+	"version": "0.1.0",
+	"title": "Contenu avec 2 cartes CTA",
+	"category": "Gutenberg-block",
+	"description": "Titres, contenu et bouton avec 2 cartes superposées avec contenu, bouton et liste.",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

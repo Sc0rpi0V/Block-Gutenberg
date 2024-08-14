@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/social-links",
+	"version": "0.1.0",
+	"title": "Liens vers réseaux sociaux",
+	"category": "Gutenberg-block",
+	"icon": "share",
+	"description": "Liste de lien vers les réseaux sociaux.",
+	"attributes" : {
+		"title" : {
+			"type": "string",
+			"default": ""
+		},
+		"socialItems": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"label": {
+						"type": "string",
+						"default": ""
+					},
+					"url": {
+						"type": "string",
+						"default": ""
+					}
+				}
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "Gutenberg/presence-world",
+	"version": "0.1.0",
+	"title": "Bloc avec contenu et une map",
+	"category": "Gutenberg-block",
+	"description": "Bloc avec titres, boutons, map, et chiffres clés",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "Gutenberg-back",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

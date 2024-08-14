@@ -1,0 +1,144 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .crosslinking {
+	background-color: #F5D750;
+	padding: 30px 20px;
+ }
+
+ .crosslinking__items {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+ }
+
+ .crosslinking__item {
+	position: relative;
+    display: flex;
+    width: 50%;
+    border: 5px;
+    box-shadow: 10px 10px 0 0 #008874;
+    padding: 4rem;
+    border-radius: 6rem;
+    column-gap: 2rem;
+    align-items: center;
+
+	&--prev{
+		background-color: #fff;
+
+		.crosslinking__item-arrow {
+			background-color: #33BBA7;
+			box-shadow: 5px 5px 0 0 #F5D750;
+
+			&.dashicon{
+				&::before{
+					color: #FFF;
+				}
+			}
+		}
+
+		.crosslinking__item-content-overtitle {
+			color: #006657;
+		}
+
+		.crosslinking__item-content-title {
+			color: #080068;
+		}
+
+		.crosslinking__item-content-link-text {
+			text-decoration-line: underline;
+			color: #080068;
+		}
+	}
+
+	&--next {
+		background-color: #0a0082;
+
+		.crosslinking__item-arrow {
+			background-color: #F5D750;
+    		box-shadow: 5px 5px 0 0 #008874;
+
+			&.dashicon{
+				&::before{
+					color: #0A0082;
+				}
+			}
+		}
+
+		.crosslinking__item-content-overtitle {
+			color: #66CCBD;
+		}
+
+		.crosslinking__item-content-title {
+			color: #FFF;
+		}
+
+		.crosslinking__item-content-link-text {
+			text-decoration-line: underline;
+			color: #FFFFFF;
+		}
+	}
+ }
+
+ .crosslinking__item-arrow {
+	border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+	&.dashicon{
+		&::before{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+ }
+
+ .crosslinking__item-content {
+	width: calc(100% - 70px);
+	text-align: center;
+ }
+
+ .crosslinking__item-content-overtitle {
+	text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+	margin-bottom: 10px;
+	font-family: 'Montserrat';
+ }
+
+ .crosslinking__item-content-title {
+	margin-bottom: 10px;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 20px;
+ }
+
+ .crosslinking__item-content-link {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 11px;
+
+	&-text {
+		max-width: calc(100% - 33px);
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 14px;
+	}
+
+	span.dashicon {
+		color: #33BBA7;
+	}
+ }
+
+ .crosslinking__item-content-url-selector {
+	margin-top: 15px;
+ }

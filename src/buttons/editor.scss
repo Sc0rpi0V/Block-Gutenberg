@@ -1,0 +1,64 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .buttons {
+    .buttons__inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    &--vertical {
+        .buttons__inner {
+            flex-direction: row;
+        }
+    }
+
+    &--horizontal {
+        .buttons__inner{
+            flex-direction: column;
+        }
+    }
+}
+
+.buttons--vertical{
+    &.buttons--left {
+        .buttons__inner{
+            justify-content: flex-start;
+        }
+    }
+
+    &.buttons--center {
+        .buttons__inner{
+            justify-content: center;
+        }
+    }
+
+    &.buttons--right {
+        .buttons__inner{
+            justify-content: flex-end;
+        }
+    }
+ }
+
+.buttons--horizontal{
+    &.buttons--left {
+        .buttons__inner{
+            align-items: flex-start;
+        }
+    }
+    &.buttons--center {
+        .buttons__inner{
+            align-items: center;
+        }
+    }
+
+    &.buttons--right {
+        .buttons__inner{
+            align-items: flex-end;
+        }
+    }
+ }

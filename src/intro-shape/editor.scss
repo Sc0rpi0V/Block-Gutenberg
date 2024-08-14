@@ -1,0 +1,36 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .introduction {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0 60px;
+}
+
+ .image-card__img-shape {
+	svg{
+		display: block;
+		width: 100%;
+		height: auto;
+ 	}
+ }
+
+.first-content {
+	font-family: 'Montserrat';
+	color: #008874;
+	font-weight: 700;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.second-content {
+	font-family: 'Montserrat';
+	color: #06004E;
+	font-weight: 700;
+	font-size: 20px;
+}

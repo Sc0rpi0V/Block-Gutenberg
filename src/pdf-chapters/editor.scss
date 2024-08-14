@@ -1,0 +1,203 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .pdf-chapters {
+    background-color: #0A0082;
+    padding: 70px 60px;
+ }
+
+ .pdf-chapters__overtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #66CCBD;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+ }
+
+ .pdf-chapters__title {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 60px;
+    text-align: center;
+ }
+
+ .pdf-chapters__items {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 38px;
+    margin-bottom: 20px;
+ }
+
+ .pdf-chapters__item {
+    width: calc(percentage(1/3) - 38px);
+    background-color: #FFF;
+    padding: 20px;
+ }
+
+ .pdf-chapters__item-tag {
+    background: #006657;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #FFF;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 20px;
+    max-width: 100%;
+
+    .components-base-control__field{
+        margin-bottom: 0;
+    }
+
+    .components-text-control__input {
+        background-color: transparent;
+        font-family: 'Montserrat';
+        padding: 0;
+        font-weight: 700;
+        font-size: 12px;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+ }
+
+ .pdf-chapters__item-chapterTitle {
+    color: #006657;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    .components-base-control__field{
+        margin-bottom: 0;
+    }
+
+    .components-text-control__input {
+        background-color: transparent;
+        padding: 0;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: 'Montserrat';
+        color: #006657;
+        text-transform: uppercase;
+    }
+ }
+
+ .pdf-chapters__item-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A0082;
+    margin-bottom: 80px;
+ }
+
+ .chapter-pdfInner {
+   display: inline-flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-items: center;
+ }
+
+ .pdfRenderLink {
+   font-size: 15px;
+   color: #0A0082;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   text-decoration: none !important;
+ }
+
+ .pdf-chapters__btn-input {
+   display: block;
+ }
+
+ .pdf-chapters__btn-text {
+   display: inline-block;
+   margin-top: 10px;
+   padding: 14px 20px;
+   border: 2px solid #0A0082;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 16px;
+   color: #0A0082;
+   &:hover {
+      color: #0A0082;
+  }
+ }
+
+ .pdf-chapters__item-remove {
+    margin-top: 30px;
+    user-select: none !important;
+ }
+
+ .pdf-chapters__add {
+    text-align: right;
+
+    .components-button{
+        background-color: #FFF;
+        user-select: none !important;
+    }
+ }
+
+ .pdf-chapters__buttons {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: centrer;
+   align-items: center;
+   gap: 0 30px;
+   margin-top : 40px;
+   background-color: #FFF;
+   padding: 30px 10px;
+ }
+
+ .pdf-chapters__button-item {
+   width: calc(50% - 15px);
+ }
+
+ .pdf-chapters__button-item-aligner {
+   display: inline-flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-items: center;
+ }
+
+ .pdf-chapters__button-item-link {
+   font-size: 15px;
+   color: #0A0082;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   text-decoration: none !important;
+ }
+
+ .pdf-chapters__button-item-input {
+   display: inline-block;
+   margin-top: 10px;
+   padding: 14px 20px;
+   border: 2px solid #33BBA7;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 16px;
+
+   &--1 {
+      color: #0A0082;
+      background-color: #33BBA7;
+      &:hover {
+         color: #0A0082;
+      }
+   }
+
+   &--2 {
+      background-color: #0A0082;
+      color: #FFF;
+      &:hover {
+         color: #FFF;
+      }
+   }
+ }

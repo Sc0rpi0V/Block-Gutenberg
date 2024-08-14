@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .related-pages__header{
+	&--left {
+			text-align: left;
+	}
+
+	&--center {
+			text-align: center;
+	}
+
+	&--right {
+			text-align: right;
+	}
+}
+
+.related-pages__header-title {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-family: 'Montserrat';
+	font-size: 56px;
+	letter-spacing: 0.1rem;
+	color: #1c0202;
+	text-align: center;
+}
+
+.related-pages__item {
+	padding: 24px 20px;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #ccc; 
+}
+
+.related-pages__items-add {
+	margin-top: 30px;
+	text-align: right;
+}

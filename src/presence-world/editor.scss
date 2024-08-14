@@ -1,0 +1,76 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .wp-block-Gutenberg-presence-world{
+	 .block-heading__title-small {
+		font-family: 'Montserrat';
+		font-weight: bold;
+		line-height: 1.2;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		color: #006657;
+		font-size: 14px;
+		margin-bottom: 10px;
+	 }
+
+	 .world-presence__title {
+		font-weight: bold;
+		line-height: 1.2;
+		letter-spacing: 0.1rem;
+		color: #0a0082;
+		font-size: 50px;
+	 }
+
+	 .world-presence__content {
+		display: grid;
+		margin-top: 4rem;
+		grid-template-columns: repeat(3, 33.33%);
+		grid-template-areas:
+			"map map image"
+			"key-1 key-2 key-3";
+	 }
+
+	 .world-presence__map {
+		grid-area: map;
+		align-self: center;
+		justify-self: center;
+		padding: 2rem;
+	 }
+
+	 .world-presence__img{
+		grid-area: image;
+		aspect-ratio: 1;
+		border-radius: 58px 0;
+		overflow: hidden;
+		align-self: self-end;
+	 }
+
+	 .world-presence{
+		&__item {
+
+			&--1 {
+				grid-area: key-1;
+				background-color: #00AA91;
+				border-radius: 58px 0;
+				color: #0a0082;
+			}
+	
+			&--2 {
+				grid-area: key-2;
+				background-color: #0a0082;
+				border-radius: 0 0 0 58px;
+				color: #FFF;
+			}
+	
+			&--3 {
+				grid-area: key-3;
+				background-color: #F5D750;
+				border-radius: 0 58px;
+				color: #0a0082;
+
+			}
+		}
+	 }
+ }
